@@ -54,7 +54,7 @@
             // 
             // passField
             // 
-            this.passField.Location = new System.Drawing.Point(167, 197);
+            this.passField.Location = new System.Drawing.Point(171, 197);
             this.passField.Name = "passField";
             this.passField.Size = new System.Drawing.Size(100, 20);
             this.passField.TabIndex = 2;
