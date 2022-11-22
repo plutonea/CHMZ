@@ -36,24 +36,25 @@
             // 
             // loginField
             // 
-            this.loginField.Location = new System.Drawing.Point(66, 114);
+            this.loginField.Location = new System.Drawing.Point(22, 197);
             this.loginField.Name = "loginField";
             this.loginField.Size = new System.Drawing.Size(100, 20);
             this.loginField.TabIndex = 0;
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(151, 140);
+            this.buttonLogin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonLogin.Location = new System.Drawing.Point(107, 223);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonLogin.TabIndex = 1;
             this.buttonLogin.Text = "Войти";
-            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // passField
             // 
-            this.passField.Location = new System.Drawing.Point(207, 114);
+            this.passField.Location = new System.Drawing.Point(167, 197);
             this.passField.Name = "passField";
             this.passField.Size = new System.Drawing.Size(100, 20);
             this.passField.TabIndex = 2;
@@ -63,7 +64,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(402, 165);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(295, 258);
             this.Controls.Add(this.passField);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.loginField);
