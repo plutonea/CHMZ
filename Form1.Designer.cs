@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.loginField = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.passField = new System.Windows.Forms.TextBox();
@@ -35,24 +36,24 @@
             // 
             // loginField
             // 
-            this.loginField.Location = new System.Drawing.Point(89, 87);
+            this.loginField.Location = new System.Drawing.Point(79, 102);
             this.loginField.Name = "loginField";
             this.loginField.Size = new System.Drawing.Size(100, 20);
             this.loginField.TabIndex = 0;
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(114, 169);
+            this.buttonLogin.Location = new System.Drawing.Point(142, 128);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonLogin.TabIndex = 1;
-            this.buttonLogin.Text = "button1";
+            this.buttonLogin.Text = "Войти";
             this.buttonLogin.UseVisualStyleBackColor = true;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // passField
             // 
-            this.passField.Location = new System.Drawing.Point(254, 87);
+            this.passField.Location = new System.Drawing.Point(185, 102);
             this.passField.Name = "passField";
             this.passField.Size = new System.Drawing.Size(100, 20);
             this.passField.TabIndex = 2;
@@ -61,7 +62,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(395, 157);
             this.Controls.Add(this.passField);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.loginField);

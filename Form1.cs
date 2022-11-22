@@ -27,7 +27,7 @@ namespace CHMZ
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             String loginUser = loginField.Text;
-            String passUser = passField.Text;
+            String passUser = Form1.sha256(passField.Text);
 
             DataBase dataBase = new DataBase();
 
@@ -42,9 +42,23 @@ namespace CHMZ
             adapter.Fill(table);
 
             if (table.Rows.Count > 0)
-                MessageBox.Show("Yes");
+                MessageBox.Show("Вы успешно авторизировались!");
             else
-                MessageBox.Show("Nonnn");
+                MessageBox.Show("Неправильный логин или пароль!");
+        }
+
+        static string sha256(string randomString)
+        {
+            //Тут происходит криптографическая магия. Смысл данного метода заключается в том, что строка залетает в метод
+            var crypt = new System.Security.Cryptography.SHA256Managed();
+            var hash = new System.Text.StringBuilder();
+            byte[] crypto = crypt.ComputeHash(Encoding.UTF8.GetBytes(randomString));
+            foreach (byte theByte in crypto)
+            {
+                hash.Append(theByte.ToString("x2"));
+            }
+            return hash.ToString();
         }
     }
 }
+
