@@ -36,14 +36,14 @@
             // 
             // loginField
             // 
-            this.loginField.Location = new System.Drawing.Point(79, 102);
+            this.loginField.Location = new System.Drawing.Point(66, 114);
             this.loginField.Name = "loginField";
             this.loginField.Size = new System.Drawing.Size(100, 20);
             this.loginField.TabIndex = 0;
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(142, 128);
+            this.buttonLogin.Location = new System.Drawing.Point(151, 140);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonLogin.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             // passField
             // 
-            this.passField.Location = new System.Drawing.Point(185, 102);
+            this.passField.Location = new System.Drawing.Point(207, 114);
             this.passField.Name = "passField";
             this.passField.Size = new System.Drawing.Size(100, 20);
             this.passField.TabIndex = 2;
@@ -63,7 +63,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(395, 157);
+            this.ClientSize = new System.Drawing.Size(402, 165);
             this.Controls.Add(this.passField);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.loginField);
